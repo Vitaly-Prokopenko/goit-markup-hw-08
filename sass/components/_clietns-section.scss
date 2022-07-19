@@ -1,0 +1,41 @@
+/*---------------Clients-----------------*/
+
+.clients-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 150px) / 6);
+}
+
+.clients-list__item {
+  width: 170px;
+  height: 92px;
+}
+.clients-list__link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 250ms $timing-function;
+  &:focus .clients-list__icon {
+    fill: $accent-color;
+  }
+  &:hover .clients-list__icon {
+    fill: $accent-color;
+  }
+
+  &:hover,
+  &:focus .clients-item-list {
+    border-color: $accent-color;
+  }
+}
+
+.clients-list__icon {
+  fill: $icon-color;
+  transition: fill 250ms $timing-function;
+}

@@ -1,0 +1,36 @@
+/*---------------Variables---------------*/
+
+:root {
+  --title-hero-color: #ffffff;
+  --title-color: #212121;
+  --after-title-color: #757575;
+  --main-btn-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --contact-color: #757575;
+  --nav-link-color: #212121;
+  --focus-color: #ffffff;
+  --accent-btn-color: #ffffff;
+  --top-logo-color: #000000;
+  --bottom-logo-color: #ffffff;
+  --socials-icon-color: #afb1b8;
+  --icon-color: #afb1b8;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+$title-hero-color: var(--title-hero-color);
+$title-color: var(--title-color);
+$after-title-color: var(--after-title-color);
+$main-btn-color: var(--main-btn-color);
+$text-color: var(--text-color);
+$accent-color: var(--accent-color);
+$contack-color: var(--contact-color);
+$contact-color: var(--contact-color);
+$nav-link-color: var(--nav-link-color);
+$focus-color: var(--focus-color);
+$accent-btn-color: var(--accent-btn-color);
+$top-logo-color: var(--top-logo-color);
+$bottom-logo-color: var(--bottom-logo-color);
+$socials-icon-color: var(--socials-icon-color);
+$icon-color: var(--icon-color);
+$timing-function: var(--timing-function);
