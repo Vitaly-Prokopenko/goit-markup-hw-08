@@ -1183,7 +1183,6 @@ img {
 .container-filters {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .filter__list {
