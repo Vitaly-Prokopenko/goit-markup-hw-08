@@ -594,6 +594,11 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
+@media screen and (max-width: 480px) {
+  .check-text {
+    font-size: 11px;
+  }
+}
 
 .check-text::before {
   content: "";
@@ -619,6 +624,11 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+@media screen and (max-width: 480px) {
+  .accent-license {
+    font-size: 11px;
+  }
 }
 
 /*---------------Feature list------------*/
