@@ -167,6 +167,7 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts__mail,
 .contacts__tel {
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     padding-top: 32px;
@@ -390,8 +391,6 @@ img {
     top: 50%;
     left: 50%;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -590,7 +589,7 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.74;
   letter-spacing: 0.03em;
   color: #757575;
@@ -616,7 +615,7 @@ img {
 
 .accent-license {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
@@ -1192,11 +1191,23 @@ img {
   flex-wrap: wrap;
   row-gap: 15px;
   column-gap: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 480px) {
+  .filter__list {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .filter__list {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter__list {
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
@@ -1226,6 +1237,12 @@ img {
 }
 
 /*---------------Projects----------------*/
+@media screen and (min-width: 1200px) {
+  .section-projects {
+    padding: 94px 0;
+  }
+}
+
 .projects-list {
   display: flex;
   flex-wrap: wrap;
@@ -1401,7 +1418,6 @@ img {
 }
 @media screen and (min-width: 480px) {
   .mobile-menu {
-    max-width: 482px;
     margin: 0 auto;
   }
 }
