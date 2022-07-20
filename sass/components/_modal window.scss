@@ -14,8 +14,7 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms var(--timing-function),
-    visibility 250ms var(--timing-function);
+  transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
 }
 
 .modal {
@@ -30,7 +29,28 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms $timing-function;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -55,17 +75,17 @@
 }
 
 .modal-icon-btn {
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function;
 }
 
 .modal-close-btn:focus,
 .modal-close-btn:hover .modal-icon-btn {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .modal-close-btn:focus {
-  outline: var(--accent-color);
-  border-color: var(--accent-color);
+  outline: $accent-color;
+  border-color: $accent-color;
 }
 
 .form-wrapp,
@@ -91,7 +111,7 @@
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function;
 }
 .modal-title {
   font-family: "Roboto";
@@ -112,7 +132,7 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: var(--after-title-color);
+  color: $after-title-color;
 }
 
 .modal-input {
@@ -131,27 +151,27 @@
   cursor: pointer;
 }
 .modal-input:hover {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .modal-input:focus ~ .icon-person-form {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .modal-input:hover ~ .icon-person-form {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .modal-input:focus {
-  outline: var(--accent-color);
+  outline: $accent-color;
 }
 
 .modal-input:focus {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .icon-person-form:hover {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .modal-input::placeholder {
@@ -190,12 +210,12 @@
 }
 
 .comment-text:focus {
-  border-color: var(--accent-color);
-  outline: var(--accent-color);
+  border-color: $accent-color;
+  outline: $accent-color;
 }
 .comment-text:hover {
-  border-color: var(--accent-color);
-  outline: var(--accent-color);
+  border-color: $accent-color;
+  outline: $accent-color;
 }
 
 .modal-check {
@@ -225,7 +245,7 @@
 }
 
 .input-check:checked + .check-text::before {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   border: none;
   background-image: url(../images/che.svg);
   background-repeat: no-repeat;
@@ -239,5 +259,5 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: $accent-color;
 }
