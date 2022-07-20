@@ -1,33 +1,26 @@
 /*---------------Logo--------------------*/
 
 .logo {
-  display: block;
-  text-decoration: none;
-  list-style: none;
-}
-
-.logo__text {
-  font-family: "Raleway", sans-serif;
+  color: $title-color;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 0.03em;
-  color: var(--top-logo-color);
+  &__accent {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 93px;
+  }
 }
 
-.logo__accent {
-  color: var(--accent-color);
-}
-
-.heder-logo {
-  margin-right: 93px;
-}
-
-.footer-logo {
-  display: inline-block;
+.page-footer__logo {
+  color: $bottom-logo-color;
   margin-bottom: 20px;
-}
-
-.bottom-logo {
-  color: var(--bottom-logo-color);
+  display: inline-block;
 }

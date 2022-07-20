@@ -1,17 +1,34 @@
 /*---------------Clients-----------------*/
 
+.clients-section {
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+
 .clients-list {
   list-style: none;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  flex-basis: calc((100% - 150px) / 6);
 }
 
 .clients-list__item {
-  width: 170px;
   height: 92px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 .clients-list__link {
   display: inline-block;
